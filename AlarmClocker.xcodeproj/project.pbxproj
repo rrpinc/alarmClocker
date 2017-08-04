@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1877E2251F3369DE00A99FF8 /* AlarmClocksTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877E2241F3369DE00A99FF8 /* AlarmClocksTableViewDataSource.swift */; };
+		1877E22C1F336C1500A99FF8 /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877E22A1F336C1500A99FF8 /* AlarmTableViewCell.swift */; };
+		1877E22D1F336C1500A99FF8 /* AlarmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1877E22B1F336C1500A99FF8 /* AlarmTableViewCell.xib */; };
+		1877E2321F336FA600A99FF8 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877E2311F336FA600A99FF8 /* Alarm.swift */; };
+		1877E2341F33829400A99FF8 /* AlarmsViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877E2331F33829400A99FF8 /* AlarmsViewPresenter.swift */; };
+		189BF27B1F346FB9006CC757 /* AlarmClockNotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BF27A1F346FB9006CC757 /* AlarmClockNotificationScheduler.swift */; };
+		189BF27D1F3473E3006CC757 /* AlarmsNotificationMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189BF27C1F3473E3006CC757 /* AlarmsNotificationMapper.swift */; };
+		189BF2801F34783E006CC757 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189BF27F1F34783E006CC757 /* UserNotifications.framework */; };
 		189EABA11F33673E00BE4ED9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EABA01F33673E00BE4ED9 /* AppDelegate.swift */; };
-		189EABA31F33673E00BE4ED9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EABA21F33673E00BE4ED9 /* ViewController.swift */; };
 		189EABA61F33673E00BE4ED9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189EABA41F33673E00BE4ED9 /* Main.storyboard */; };
 		189EABA81F33673E00BE4ED9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189EABA71F33673E00BE4ED9 /* Assets.xcassets */; };
 		189EABAB1F33673E00BE4ED9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189EABA91F33673E00BE4ED9 /* LaunchScreen.storyboard */; };
 		189EABB61F33673E00BE4ED9 /* AlarmClockerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EABB51F33673E00BE4ED9 /* AlarmClockerTests.swift */; };
+		18F45DE21F34B2210000E434 /* AlarmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F45DE11F34B2210000E434 /* AlarmsViewController.swift */; };
+		18F45DE41F34BC240000E434 /* AlarmsPersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F45DE31F34BC240000E434 /* AlarmsPersistentStorage.swift */; };
+		18F45DE61F34C2E90000E434 /* AlarmsViewPresenterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F45DE51F34C2E90000E434 /* AlarmsViewPresenterProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +36,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1877E2241F3369DE00A99FF8 /* AlarmClocksTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClocksTableViewDataSource.swift; sourceTree = "<group>"; };
+		1877E22A1F336C1500A99FF8 /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
+		1877E22B1F336C1500A99FF8 /* AlarmTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmTableViewCell.xib; sourceTree = "<group>"; };
+		1877E2311F336FA600A99FF8 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		1877E2331F33829400A99FF8 /* AlarmsViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmsViewPresenter.swift; sourceTree = "<group>"; };
+		189BF27A1F346FB9006CC757 /* AlarmClockNotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockNotificationScheduler.swift; sourceTree = "<group>"; };
+		189BF27C1F3473E3006CC757 /* AlarmsNotificationMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmsNotificationMapper.swift; sourceTree = "<group>"; };
+		189BF27F1F34783E006CC757 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		189EAB9D1F33673E00BE4ED9 /* AlarmClocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmClocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189EABA01F33673E00BE4ED9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		189EABA21F33673E00BE4ED9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		189EABA51F33673E00BE4ED9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		189EABA71F33673E00BE4ED9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		189EABAA1F33673E00BE4ED9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +53,9 @@
 		189EABB11F33673E00BE4ED9 /* AlarmClockerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlarmClockerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		189EABB51F33673E00BE4ED9 /* AlarmClockerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockerTests.swift; sourceTree = "<group>"; };
 		189EABB71F33673E00BE4ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F45DE11F34B2210000E434 /* AlarmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmsViewController.swift; sourceTree = "<group>"; };
+		18F45DE31F34BC240000E434 /* AlarmsPersistentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmsPersistentStorage.swift; sourceTree = "<group>"; };
+		18F45DE51F34C2E90000E434 /* AlarmsViewPresenterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmsViewPresenterProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189BF2801F34783E006CC757 /* UserNotifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +77,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		189BF27E1F34783E006CC757 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				189BF27F1F34783E006CC757 /* UserNotifications.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		189BF2811F34B1B3006CC757 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				189BF27C1F3473E3006CC757 /* AlarmsNotificationMapper.swift */,
+				1877E2311F336FA600A99FF8 /* Alarm.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		189BF2821F34B1BA006CC757 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18F45DE11F34B2210000E434 /* AlarmsViewController.swift */,
+				1877E22A1F336C1500A99FF8 /* AlarmTableViewCell.swift */,
+				1877E22B1F336C1500A99FF8 /* AlarmTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		189BF2831F34B1C4006CC757 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1877E2331F33829400A99FF8 /* AlarmsViewPresenter.swift */,
+				189BF27A1F346FB9006CC757 /* AlarmClockNotificationScheduler.swift */,
+				1877E2241F3369DE00A99FF8 /* AlarmClocksTableViewDataSource.swift */,
+				18F45DE31F34BC240000E434 /* AlarmsPersistentStorage.swift */,
+				18F45DE51F34C2E90000E434 /* AlarmsViewPresenterProtocols.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		189EAB941F33673E00BE4ED9 = {
 			isa = PBXGroup;
 			children = (
 				189EAB9F1F33673E00BE4ED9 /* AlarmClocker */,
 				189EABB41F33673E00BE4ED9 /* AlarmClockerTests */,
 				189EAB9E1F33673E00BE4ED9 /* Products */,
+				189BF27E1F34783E006CC757 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +138,10 @@
 		189EAB9F1F33673E00BE4ED9 /* AlarmClocker */ = {
 			isa = PBXGroup;
 			children = (
+				189BF2831F34B1C4006CC757 /* Presenter */,
+				189BF2821F34B1BA006CC757 /* View */,
+				189BF2811F34B1B3006CC757 /* Model */,
 				189EABA01F33673E00BE4ED9 /* AppDelegate.swift */,
-				189EABA21F33673E00BE4ED9 /* ViewController.swift */,
 				189EABA41F33673E00BE4ED9 /* Main.storyboard */,
 				189EABA71F33673E00BE4ED9 /* Assets.xcassets */,
 				189EABA91F33673E00BE4ED9 /* LaunchScreen.storyboard */,
@@ -180,6 +243,7 @@
 				189EABAB1F33673E00BE4ED9 /* LaunchScreen.storyboard in Resources */,
 				189EABA81F33673E00BE4ED9 /* Assets.xcassets in Resources */,
 				189EABA61F33673E00BE4ED9 /* Main.storyboard in Resources */,
+				1877E22D1F336C1500A99FF8 /* AlarmTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +261,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				189EABA31F33673E00BE4ED9 /* ViewController.swift in Sources */,
 				189EABA11F33673E00BE4ED9 /* AppDelegate.swift in Sources */,
+				18F45DE61F34C2E90000E434 /* AlarmsViewPresenterProtocols.swift in Sources */,
+				1877E2321F336FA600A99FF8 /* Alarm.swift in Sources */,
+				18F45DE21F34B2210000E434 /* AlarmsViewController.swift in Sources */,
+				189BF27B1F346FB9006CC757 /* AlarmClockNotificationScheduler.swift in Sources */,
+				18F45DE41F34BC240000E434 /* AlarmsPersistentStorage.swift in Sources */,
+				1877E2251F3369DE00A99FF8 /* AlarmClocksTableViewDataSource.swift in Sources */,
+				189BF27D1F3473E3006CC757 /* AlarmsNotificationMapper.swift in Sources */,
+				1877E22C1F336C1500A99FF8 /* AlarmTableViewCell.swift in Sources */,
+				1877E2341F33829400A99FF8 /* AlarmsViewPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
